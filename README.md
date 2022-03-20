@@ -7,6 +7,6 @@
 - Bootstrap5
 - JavaScript
 
-## [Canterbury Winery](https://github.com/lizzencamelo/Canterbury-Winery/)
+## [Canterbury Winery](https://lizzencamelo.github.io/Canterbury-Winery/)
 
 ## Author 🍒 @[lizzencamelo](https://github.com/lizzencamelo/)
