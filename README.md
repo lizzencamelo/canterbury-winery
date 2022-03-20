@@ -1,4 +1,4 @@
-# Winery-Themed-Bootstrap-Website-Design
+# Canterbury Winery { Bootstrap-Website-Design }
  A frontend implementation of a rustic winery website built using Bootstrap.
 
 ## Tools Used
