@@ -1,4 +1,4 @@
-# Canterbury Winery { Bootstrap-Website-Design }
+# Canterbury Winery ~ Bootstrap Web Design
  A frontend implementation of a rustic winery website built using Bootstrap.
 
 ## Tools Used
@@ -7,4 +7,4 @@
 - Bootstrap5
 - JavaScript
 
-## 🍒 [Canterbury Winery](https://lizzencamelo.github.io/Canterbury-Winery/)
+## Author 🍒 @[lizzencamelo](https://github.com/lizzencamelo/)
