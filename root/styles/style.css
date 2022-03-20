@@ -1,0 +1,380 @@
+﻿/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Colours */
+    --first-colour: #ffffff;
+    --second-colour: #000000;
+    --third-colour: #010705;
+    --contrast-colour: #450000;
+    --theme-colour: #D3BB4B;
+    /* Typography */
+    --body-font: 'Spartan', sans-serif;
+    --font-small: 0.5rem;
+    --font-medium: 0.8rem;
+    --font-big: 1.5rem; 
+    --font-large: 2rem;
+    /* Weights */
+    --font-semi-bold: 500;
+    --font-bold: 600;
+    /* Letter spacing */
+    --ls: 3px;
+    /* Margins */
+    --mb1: 0.5rem; 
+    --mb2: 1rem;
+    --mb3: 2rem; 
+    --mb4: 3rem;
+    /* Paddings */
+    --p1: 0 4rem 4rem;
+    --p2: 4.4rem 6.67rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        /* Typography */
+        --font-small: 0.5rem; 
+        --font-medium: 0.8rem;
+        --font-big: 2rem;
+        --font-large: 3rem;
+        /* Letter spacing */
+        --ls: 4.5px; 
+        /* Padding */
+        --p1: 0 5rem 5rem;
+        --p2: 6.67rem 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        /* Typography */
+        --font-small: 0.5rem; 
+        --font-medium: 1rem;
+        --font-big: 3rem;
+        --font-large: 4rem; 
+        /* Letter spacing */
+        --ls: 6px;
+        /* Margins */
+        --mb1: 1rem; 
+        --mb2: 2rem; 
+        --mb3: 3rem; 
+        --mb4: 4rem;
+        /* Paddings */
+        --p1: 0 6rem 6rem;
+        --p2: 10rem 12rem;
+    }
+}
+
+/* Basic */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+::selection {                                                                                   
+    color: var(--first-colour);
+    background-color: var(--second-colour);
+}
+
+.padding {
+    padding: var(--p1);
+}
+
+/* Display Titles */
+.display-1 {
+    color: var(--first-colour);
+    font-weight: var(--font-bold);
+    font-size: var(--font-large);
+    margin-bottom: var(--mb3);
+}
+
+.display-2 {
+    font-weight: var(--font-bold);
+    font-size: var(--font-big);
+    margin-bottom: var(--mb4);
+}
+
+.display-3 {
+    font-size: var(--font-big);
+}
+
+.display-4, .card-title {
+    font-size: var(--font-small);
+    letter-spacing: var(--ls);
+    text-transform: uppercase;
+}
+
+.wine .display-2 {
+    margin-bottom: var(--mb1);
+    color: var(--second-colour);
+}
+
+.estate .display-2 {
+    text-transform: uppercase;
+    letter-spacing: var(--ls);
+    margin-bottom: var(--mb2);
+}
+
+.contact .display-2 {
+    text-transform: uppercase;
+    font-size: var(--font-medium);
+}
+
+/* Paragraphs */
+p {
+    font-size: var(--font-medium);
+}
+
+/* Additional texts */
+small {
+    font-size: var(--font-small);
+    letter-spacing: var(--ls);
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: var(--mb1);
+}
+
+/* Buttons */
+.btn {
+    font-size: var(--font-small);
+    text-transform: uppercase;
+    letter-spacing: var(--ls);
+    border-radius: 0;
+    transition: ease-in-out .3s;
+}
+
+.btn-primary {    
+    background-color: transparent;
+    border: 1px solid var(--first-colour);
+    
+}
+.btn-primary:hover, .btn-primary:focus {
+    color: var(--second-colour);
+    background-color: var(--first-colour);
+    border: 1px solid var(--first-colour);
+}
+
+.btn-secondary {
+    color: var(--contrast-colour);
+    background-color: var(--theme-colour);
+    border: 1px solid var(--theme-colour);
+    transition: ease-out .3s;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    color: var(--theme-colour);
+    background-color: transparent;
+    border: 1px solid var(--theme-colour);
+}
+
+.btn-submit {
+    background-color: var(--second-colour);
+    color: var(--first-colour);
+    border: 1px solid var(--second-colour);
+}
+
+.btn-submit:hover, .btn-submit:focus {
+    background-color: var(--first-colour);
+    color: var(--second-colour);
+    border: 1px solid var(--second-colour);
+}
+
+/* Landing */
+.landing {
+    background-image: url('../images/winery_rack.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar-nav {
+    align-items: center;
+    transition: ease-out .3s;
+}
+
+.navbar-collapse {
+    height: 65vh;
+}
+
+.nav-item {
+    margin-bottom: var(--mb4);
+    text-align: center;
+}
+
+.nav-link {
+    color: var(--theme-colour);
+    font-size: var(--font-big);
+    font-weight: var(--font-bold);
+    transition: ease-out .2s;
+}
+
+.nav-link:hover {
+    color: var(--theme-colour);
+    font-size: var(--font-large);
+}
+
+/* Customising the navbar toggler icon */
+.custom-toggler.navbar-toggler {
+    border-color: var(--theme-colour);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(211, 187, 75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.logo {
+    max-width: 150px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-item {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: var(--font-medium);
+        transition: ease-in .2s;
+    }
+
+    .nav-link:hover {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+}
+
+/* Home */
+.home {
+    margin-top: var(--mb4);
+}
+
+.home-features > * {                                  
+    margin-bottom: var(--mb2);
+}
+
+/* Wine */
+.card-img-top {
+    width: 25%;
+}
+
+.wine .row > * {
+    margin-bottom: var(--mb4);
+}
+
+/* Estate */
+.estate {
+    background-color: var(--contrast-colour);
+    color: var(--theme-colour);
+}
+
+.winery-barrel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lead {
+    font-size: var(--font-medium);
+}
+
+/* Contact */
+.contact {
+    padding: var(--p2);
+}
+
+.contact .row {
+    margin-bottom: var(--mb3);
+}
+
+label {
+    font-size: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--ls);
+}
+
+.form-control {
+    border: none;
+}
+
+::placeholder {
+    font-size: var(--font-small);
+}
+
+/*  Carousel  */
+.carousel-container {
+    height: 50vh;
+}
+
+/* Footer */
+footer {
+    background-color: var(--third-colour);
+    padding-top: var(--mb4);
+}
+
+footer .row > * {
+    margin-bottom: var(--mb3);
+}
+
+footer i {
+    color: var(--first-colour);
+    transition: ease .3s;
+}
+
+footer i:hover {
+    color: #808080;
+}
+
+.socials {
+    margin: 1.5rem;
+}
+
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-menu {
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.footer-menu-item {
+    color: var(--first-colour);
+    transition: ease .3s;
+}
+
+.footer-menu-item:hover {
+    color: #808080;
+    text-decoration: none;
+
+}
+
+/* End */
+.page-end {
+    background-image: url('../images/vintage_wines.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    color: var(--first-colour);
+    position: relative;
+}
+
+.copyright-text {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
