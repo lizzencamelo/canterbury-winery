@@ -7,6 +7,6 @@
 - Bootstrap5
 - JavaScript
 
-## Live Site | [Canterbury Winery](https://lizzencamelo.github.io/Canterbury-Winery/)
+## Live Site | [Canterbury Winery](https://lizzencamelo.github.io/canterbury-winery/)
 
 ## Author | @[lizzencamelo](https://github.com/lizzencamelo/)
